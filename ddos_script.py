@@ -3,7 +3,7 @@ import threading as thr
 
 # first the basic information
 
-the_target = '76.180.65.240' # this is just a mede up ip(you can also put a domain name here) use only authorized servers to run this script
+the_target = '127.8.8.1' # this is your local machine's ip(you can also put a domain name here) use only authorized servers to run this script
 port = 80 # This is the http port, but you can also attack others like: smtp port 25, ftp port 21, ssh port 22 and so on..
 hoax_ip = '182.88.100.56' # this is just some manufactured ip that is supposed to be a fake ip adress
 
